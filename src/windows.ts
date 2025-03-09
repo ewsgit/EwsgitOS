@@ -1,9 +1,10 @@
+import { Subprocess } from "bun";
 import fs, { cpSync, existsSync } from "fs"
 
 async function installWingetPackage(packageId: string, notAdmin?: boolean) {
   console.log(`Installing '${packageId}'...`)
 
-  let proc;
+  let proc: Subprocess<"ignore", "pipe", "pipe">;
 
   if (notAdmin) {
     proc = Bun.spawn([
