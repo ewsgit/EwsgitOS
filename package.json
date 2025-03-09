@@ -1,0 +1,19 @@
+{
+  "name": "ewsgit-os-installer",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "The Installer for EwsgitOS",
+  "main": "src/install.ts",
+  "scripts": {
+    "install-ewsgitos": "bun run src/install.ts"
+  },
+  "keywords": [],
+  "author": "Ewsgit",
+  "license": "MIT",
+  "dependencies": {
+    "@types/bun": "^1.2.4",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
